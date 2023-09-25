@@ -1,0 +1,62 @@
+.Konsep {
+  @extend %boxshadow;
+  width: 408px;
+  //   width: 100%;
+  padding: 1em 1.5em;
+  box-sizing: border-box;
+  .icon {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .date {
+    display: flex;
+    align-items: center;
+  }
+  .loading {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1em;
+  }
+  meter {
+    width: 100%;
+  }
+  .images {
+    display: flex;
+    width: fit-content;
+    padding: 1em 0;
+    img {
+      border-radius: 100%;
+      position: relative;
+    }
+    .img1 {
+      position: relative;
+      left: 0px;
+      z-index: 3;
+      border: 2px white solid;
+    }
+    .img2 {
+      position: relative;
+      left: -10px;
+      z-index: 2;
+      border: 2px white solid;
+    }
+    .img3 {
+      position: relative;
+      left: -20px;
+      bottom: 0;
+      z-index: 1;
+      border: 2px white solid;
+    }
+  }
+  .addProductParent {
+    position: relative;
+    width: max-content;
+    .addProduct {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,46 @@
+.taskPrograss {
+  @extend %boxshadow;
+  width: 281px;
+  padding: 0.8em 1.5em;
+  margin: 1em;
+  h4 {
+    margin: 1em 0;
+  }
+  .taskProgressParent {
+    margin: 1em 0;
+    .taskProgressUpper {
+      display: flex;
+      justify-content: space-between;
+    }
+    meter[value="3"] {
+      width: 100%;
+      &::-webkit-meter-bar {
+        background-color: rgba(212, 89, 232, 0.1);
+        border: none;
+      }
+      &::-webkit-meter-optimum-value {
+        background-color: $Orchid;
+      }
+    }
+    meter[value="6"] {
+      width: 100%;
+      &::-webkit-meter-bar {
+        background-color: rgba(70, 189, 132, 0.1);
+        border: none;
+      }
+      &::-webkit-meter-optimum-value {
+        background-color: $Mint;
+      }
+    }
+    meter[value="2"] {
+      width: 100%;
+      &::-webkit-meter-bar {
+        background-color: rgba(8, 160, 247, 0.1);
+        border: none;
+      }
+      &::-webkit-meter-optimum-value {
+        background-color: $VividCerulean;
+      }
+    }
+  }
+}

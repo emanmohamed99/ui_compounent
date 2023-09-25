@@ -1,0 +1,29 @@
+.progressContainer {
+  width: 319px;
+  @extend %boxshadow;
+  padding: 1em;
+  margin: 1em;
+  .progressUpper {
+    display: flex;
+    justify-content: space-between;
+  }
+  .midProgress {
+    display: flex;
+    margin: 1em 0;
+    justify-content: center;
+    .parentSvg {
+      position: relative;
+      width: max-content;
+      .childSvg {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        p {
+          white-space: nowrap;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+%boxshadow {
+  border-radius: 8px;
+  background: white;
+  box-shadow: 0px 30px 60px 0px $boxshadow;
+}
+%helpersDiv {
+  display: flex;
+  align-items: center;
+  border: 0.5px solid $OrangeSoda;
+  background: $Snow;
+  width: 100%;
+  padding: 1em;
+  border-radius: 8px;
+  margin: 1em 0;
+  .helpersSvg {
+    position: relative;
+    width: max-content;
+    p {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+  }
+  .helpersInfo {
+    margin: 0 1em;
+  }
+}

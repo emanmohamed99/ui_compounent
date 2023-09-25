@@ -1,0 +1,24 @@
+.activity {
+  @extend %boxshadow;
+  width: 319px;
+  padding: 1em 1.5em 0.3em 1.5em;
+  margin: 1em;
+  h4 {
+    margin-bottom: 1.5em;
+    margin-top: 1em;
+  }
+  .activityParent {
+    display: flex;
+    justify-content: space-between;
+    margin: 1em 0;
+    article {
+      margin: 0 1em;
+      .pargarph {
+        display: flex;
+      }
+      h5 {
+        margin: 0.5em 0;
+      }
+    }
+  }
+}

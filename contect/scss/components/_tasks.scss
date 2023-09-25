@@ -1,0 +1,22 @@
+.tasks {
+  @extend %boxshadow;
+  width: 281px;
+  padding: 1em;
+  margin: 1em;
+  .tasksParent {
+    display: flex;
+    justify-content: space-between;
+    margin: 1em 0;
+    img {
+      border-radius: 100%;
+      width: 100%;
+      height: auto;
+      //   aspect-ratio: 2/2;
+    }
+    .pargarph {
+      h6 {
+        opacity: 0.5;
+      }
+    }
+  }
+}

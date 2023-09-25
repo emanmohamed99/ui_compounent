@@ -1,0 +1,43 @@
+@import "./variables";
+$colors-map: (
+  "lightblack": $lightblack,
+  "VividCerulean": $VividCerulean,
+  "CornflowerBlue": $CornflowerBlue,
+  "Mint": $Mint,
+  "AliceBlue": $AliceBlue,
+  "MediumSeaGreen": $MediumSeaGreen,
+  "Black": $Black,
+  "PaleLavender": $PaleLavender,
+  "AmericanSilver": $AmericanSilver,
+  "white": $white,
+  "OrangeSoda": $OrangeSoda,
+  "Fulvous": $Fulvous,
+  "OuterSpace": $OuterSpace,
+  "GreenBlue": $GreenBlue,
+  "ChineseSilver": $ChineseSilver,
+  "VividCeruleanOpacity": $VividCeruleanOpacity,
+  "AzureishWhite": $AzureishWhite,
+  "Orchid": $Orchid,
+  "SlateBlue": $SlateBlue,
+  "KenyanCopper": $KenyanCopper,
+  "Snow": $Snow,
+  "Salem": $Salem,
+  "LightBrown": $LightBrown,
+  "DarkSpringGreen": $DarkSpringGreen,
+  "SteelBlue": $SteelBlue,
+  "YellowOrange": $YellowOrange,
+  "FloralWhite":$FloralWhite,
+  "Lavender":$Lavender,
+  
+);
+
+// @each Sass loop to generate classes
+@each $name, $hex-value in $colors-map {
+  .#{$name} {
+    color: $hex-value;
+  }
+
+  .#{$name}-bg {
+    background-color: $hex-value;
+  }
+}

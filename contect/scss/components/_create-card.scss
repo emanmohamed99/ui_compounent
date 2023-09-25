@@ -1,0 +1,91 @@
+.card1 {
+  border-radius: 8px;
+  background: white;
+  box-shadow: 0px 30px 60px 0px $boxshadow;
+  width: max-content;
+  box-sizing: border-box;
+  width: 348px;
+  padding: 1em 0;
+  .card1Exit {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 0.5em;
+  }
+
+  .content {
+    padding: 0 28px;
+    textarea {
+      width: 292px;
+      height: 150px;
+      margin-top: 16px;
+
+      resize: none;
+      border-radius: 8px;
+      border: 1px solid #7784ee;
+      box-shadow: 0px 5px 15px 0px rgba(119, 132, 238, 0.3);
+      padding: 20px;
+    }
+    .iconsDivparent1 {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 1em 0;
+      padding: 0.7em 0;
+      box-sizing: border-box;
+      border-bottom: 1px solid #ececec;
+    }
+    .iconsDivparent {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 1em 0;
+      padding-top: 0.3em;
+      box-sizing: border-box;
+    }
+    .iconsDiv {
+      padding: 0 20px;
+      box-sizing: border-box;
+      img {
+        border-radius: 100%;
+        position: relative;
+        bottom: 10px;
+        margin-right: 0.5em;
+      }
+
+      .uiDesigndiv {
+        // opacity: 0.2;
+        background-color: $VividCeruleanOpacity;
+        width: 92px;
+        height: 28px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 200px;
+        text-align: center;
+      }
+    }
+    .addIcon {
+      position: relative;
+      width: min-content;
+
+      .plus {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+    }
+    .buttonDiv {
+      button {
+        width: 100%;
+        background-color: $CornflowerBlue;
+        width: 292px;
+        height: 49px;
+        color: white;
+        border-radius: 10px;
+        border: none;
+      }
+    }
+  }
+}

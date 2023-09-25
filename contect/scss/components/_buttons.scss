@@ -1,0 +1,38 @@
+.buttons {
+  width: 281px;
+
+  padding: 1em 0;
+  margin: 1em;
+  button {
+    width: 100%;
+    margin: 1em 0;
+  }
+  .button1 {
+    button {
+      background-color: $CornflowerBlue;
+      padding: 1em;
+      border-radius: 0.8em;
+      color: white;
+      border: none;
+    }
+  }
+  .button2 {
+    button {
+      background-color: $PaleLavender;
+      padding: 1em;
+      border-radius: 0.8em;
+      color: $SlateBlue;
+      border: none;
+    }
+  }
+  .button3 {
+    button {
+      background-color: transparent;
+      padding: 1em;
+      border-radius: 0.8em;
+      color: $SlateBlue;
+      border: $SlateBlue 1px solid;
+      box-sizing: border-box;
+    }
+  }
+}

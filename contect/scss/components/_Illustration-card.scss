@@ -1,0 +1,31 @@
+.Illustration {
+  @extend %boxshadow;
+  width: 348px;
+  padding: 1em;
+  margin: 1em 0;
+  box-sizing: border-box;
+  .buttondiv {
+    background-color: rgba(8, 160, 247, 0.2);
+    width: 92px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 200px;
+    text-align: center;
+  }
+  img {
+    border-radius: 100%;
+  }
+  .pargarph {
+    margin: 0.5em 0;
+  }
+  .flex {
+    margin-right: 1em;
+    align-items: center;
+
+    p {
+      margin-left: 0.3em;
+    }
+  }
+}
